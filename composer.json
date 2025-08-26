@@ -16,8 +16,8 @@
         "source": "https://github.com/wintercms/zaxbux/wn-securityheaders-plugin"
     },
 	"require": {
-		"php": "^7.4",
-		"composer/installers": "~1.0"
+		"php": "^7.4 || ^8.0",
+		"composer/installers": "^2.0"
 	},
 	"minimum-stability": "stable",
 	"require-dev": {},
