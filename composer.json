@@ -23,5 +23,10 @@
 	"require-dev": {},
 	"extra": {
 		"installer-name": "securityheaders"
+	},
+	"config": {
+		"allow-plugins": {
+			"composer/installers": true
+		}
 	}
 }
