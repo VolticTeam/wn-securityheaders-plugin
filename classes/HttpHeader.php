@@ -1,29 +1,29 @@
 <?php namespace Zaxbux\SecurityHeaders\Classes;
 
 class HttpHeader {
-	private $name;
-	private $value;
+	private ?string $name;
+	private ?string $value;
 
-	public function __construct(string $name = null, string $value = null) {
+	public function __construct(?string $name = null, ?string $value = null) {
 		$this->name  = $name;
-		$this->value = trim($value);
+		$this->value = $value !== null ? trim($value) : null;
 	}
 
 	/**
 	 * Get header name
 	 *
-	 * @return string
+	 * @return string|null
 	 */
-	public function getName(): string {
+	public function getName(): ?string {
 		return $this->name;
 	}
 
 	/**
 	 * Get header value
 	 *
-	 * @return string
+	 * @return string|null
 	 */
-	public function getValue(): string {
+	public function getValue(): ?string {
 		return $this->value;
 	}
 
